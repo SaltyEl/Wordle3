@@ -1,0 +1,103 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1700px;
+}
+
+.header {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+
+.game-area {
+    background-color: white;
+    flex-grow: 1;
+    border-radius: 10px;
+    padding-bottom: 40px;
+}
+
+.wordle-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    justify-content: center;
+    gap: 10px;
+}
+
+.wordle-block {
+    display: flex;
+    border: solid black 1px;
+    height: 60px;
+    width: 60px;
+    border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.letters-area {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.letter-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.letter {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border: solid black 1px;
+    border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-letter {
+    color: white;
+}
+
+.background-green {
+    background-color: #33b684;
+}
+
+.background-yellow {
+    background-color: #FFD700;
+}
+
+.background-black {
+    background-color: #1C1C1C;
+}
